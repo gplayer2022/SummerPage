@@ -1,0 +1,83 @@
+/* ----------------------------- */
+/* 全体のレイアウト */
+/* ----------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+/* 文字サイズとフォント */
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* 行の高さ */
+p, ul, ol {
+    line-height: 1.8;
+}
+
+/* リンクの書式 */
+a:link, a:visited {
+    text-decoration: none;
+    color: #161BF2;
+}
+a:hover, a:active {
+    text-decoration: none;
+    color: #BD15E8;
+}
+
+/* ----------------------------- */
+/* 各部分のレイアウト */
+/* ----------------------------- */
+/* ナビゲーション */
+.header {
+    background-color: #EBEBEB;
+}
+.header .nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin: 0 20px 0;
+    list-style-type: none;
+}
+
+/* タイトル */
+.title {
+    margin: 0 0 64px;
+    /* 画像用 */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 256px 0;
+    /* 文字用 */
+    font-size: 128px;
+    text-align: center;
+    color: #DBD141;
+}
+.title.index {
+    background-image: url(../images/index-hero.jpg);
+}
+.title.menu {
+    background-image: url(../images/menu-hero.jpg);
+}
+
+/* メイン */
+.main {
+    max-width: 840px;
+    margin: 0 auto 128px;
+}
+.main h2 {
+    border-bottom: solid 2px #BD15E8;
+    font-size: 20px;
+}
+.main .section {
+    margin-bottom: 64px;
+}
+.main ul {
+    padding-left: 16px;
+}
+
+/* フッター */
+.footer p {
+    text-align: center;
+}

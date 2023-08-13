@@ -1,0 +1,11 @@
+# Windows 用管理ファイル
+Thumbs.db
+
+# フォルダたち
+# XAMPP が用意したファイル群
+original/
+# 去年の制作物
+2022/
+# 製作途中で出たファイル
+trash/
+text/
