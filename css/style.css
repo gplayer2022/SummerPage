@@ -81,3 +81,20 @@ a:hover, a:active {
 .footer p {
     text-align: center;
 }
+
+/* ----------------------------- */
+/* テーブルページ */
+/* ----------------------------- */
+.history {
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.history th, .history td {
+    padding: 16px;
+    border: 1px solid;
+}
+.history .point {
+    color: blueviolet;
+    font-weight: bold;
+}
