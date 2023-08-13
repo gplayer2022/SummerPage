@@ -3,144 +3,151 @@
 /* ------------------------------ */
 /* ボックスサイズの取り方 */
 * {
-    box-sizing: border-box;
-  }
-  
-  /* 文字サイズとフォント */
-  html {
-    font-size: 16px;
-    /* フォントは基本的にゴシック体で */
-    font-family: sans-serif;
-  }
-  
-  /* 行の高さ */
-  /* 行の高さを文字の `1.8` 倍に */
-  p,
-  ul,
-  ol {
-    line-height: 1.8;
-  }
-  
-  /* リンクの書式 */
-  a:link,
-  a:visited {
-    text-decoration: none;
-    color: #161BF2;
-  }
-  a:hover,
-  a:active {
-    text-decoration: none;
-    color: #BD15E8;
-  }
-  
-  /* ------------------------------ */
-  /* 各部分のスタイル */
-  /* ------------------------------ */
-  /* ヘッダの背景色 */
-  .header {
-    background-color: #EBEBEB;
-  }
-  /* ヘッダ内のナビ */
-  .header .nav ul {
-    /* 横並びにする */
-    display: flex;
-    /* 中央に寄せる */
-    justify-content: center;
-    /* 項目間に隙間を作る */
-    gap: 20px;
-  
-    /* 上下・左右の隙間 */
-    margin: 0 20px 0;
-    /* リストアイテムのマーカを消す */
-    list-style-type: none;
-  }
-  
-  /* タイトル */
-  .title {
-    margin: 0 0 64px;
-    /* 背景画像が繰り返されないように */
-    background-repeat: no-repeat;
-    /* 背景画像を中央基準に */
-    background-position: center;
-    background-size: cover;
-    /* 画像が大きく表示されるように */
-    padding: 256px 0;
-    font-size: 128px;
-    text-align: center;
-    color: #DBD141;
-  }
-  /* 背景画像 */
-  .title.index {
-    background-image: url(../images/index-hero.jpg);
-  }
-  .title.menu {
-    background-image: url(../images/menu-hero.jpg);
-    padding: 128px 0;
-  }
-  
-  /* メインタグ */
-  .main {
-    /* ブラウザをどんなに広げても `840px` を越えないように */
-    max-width: 840px;
-    /* 左右を auto にすることで中央に寄せる */
-    margin: 0 auto 128px;
-  }
-  /* 見出しの設定 */
-  .main h2 {
-    border-bottom: solid 2px #BD15E8;
-    font-size: 20px;
-  }
-  /* セクションごとの間を開ける */
-  .main .section {
-    /* 下で調節 */
-    margin-bottom: 64px;
-  }
-  /* リストアイテム */
-  .main ul {
-    padding-left: 16px;
-  }
-  
-  /* フッタ */
-  .footer p {
-    text-align: center;
-  }
-  
-  /* ------------------------------ */
-  /* テーブルページ */
-  /* ------------------------------ */
-  .history {
-    width: 100%;
-    border: 1px solid;
-    border-collapse: collapse;
-  }
-  .history th, .history td {
-    padding: 16px;
-    border: 1px solid;
-  }
-  .history .point {
-    color: blueviolet;
-    font-style: bold;
-  }
-  
-  /* ------------------------------ */
-  /* メニューページ */
-  /* ------------------------------ */
-  .items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-  }
-  .items img {
-    display: block;
-    width: 100%;
-  }
-  .items p {
-    margin-bottom: 0;
-  }
-  
-  /* ------------------------------ */
-  /* リストページ */
-  /* ------------------------------ */
-  .bird {
-    list-style-image: url(../images/list-bird.png);
-  }
+  box-sizing: border-box;
+}
+
+/* 文字サイズとフォント */
+html {
+  font-size: 16px;
+  /* フォントは基本的にゴシック体で */
+  font-family: sans-serif;
+}
+
+/* 行の高さ */
+/* 行の高さを文字の `1.8` 倍に */
+p,
+ul,
+ol {
+  line-height: 1.8;
+}
+
+/* リンクの書式 */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #161BF2;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #BD15E8;
+}
+
+/* ------------------------------ */
+/* 各部分のスタイル */
+/* ------------------------------ */
+/* ヘッダの背景色 */
+.header {
+  background-color: #EBEBEB;
+}
+/* ヘッダ内のナビ */
+.header .nav ul {
+  /* 横並びにする */
+  display: flex;
+  /* 中央に寄せる */
+  justify-content: center;
+  /* 項目間に隙間を作る */
+  gap: 20px;
+
+  /* 上下・左右の隙間 */
+  margin: 0 20px 0;
+  /* リストアイテムのマーカを消す */
+  list-style-type: none;
+}
+
+/* タイトル */
+.title {
+  margin: 0 0 64px;
+  /* 背景画像が繰り返されないように */
+  background-repeat: no-repeat;
+  /* 背景画像を中央基準に */
+  background-position: center;
+  background-size: cover;
+  /* 画像が大きく表示されるように */
+  padding: 256px 0;
+  font-size: 128px;
+  text-align: center;
+  color: #DBD141;
+}
+/* 背景画像 */
+.title.index {
+  background-image: url(../images/index-hero.jpg);
+}
+.title.menu {
+  background-image: url(../images/menu-hero.jpg);
+  padding: 128px 0;
+}
+
+/* メインタグ */
+.main {
+  /* ブラウザをどんなに広げても `840px` を越えないように */
+  max-width: 840px;
+  /* 左右を auto にすることで中央に寄せる */
+  margin: 0 auto 128px;
+}
+/* 見出しの設定 */
+.main h2 {
+  border-bottom: solid 2px #BD15E8;
+  font-size: 20px;
+}
+/* セクションごとの間を開ける */
+.main .section {
+  /* 下で調節 */
+  margin-bottom: 64px;
+}
+/* リストアイテム */
+.main ul {
+  padding-left: 16px;
+}
+
+/* フッタ */
+.footer p {
+  text-align: center;
+}
+
+/* ------------------------------ */
+/* テーブルページ */
+/* ------------------------------ */
+.history {
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+.history th, .history td {
+  padding: 16px;
+  border: 1px solid;
+}
+.history .point {
+  color: blueviolet;
+  font-style: bold;
+}
+
+/* ------------------------------ */
+/* メニューページ */
+/* ------------------------------ */
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+.items img {
+  display: block;
+  width: 100%;
+}
+.items p {
+  margin-bottom: 0;
+}
+
+/* ------------------------------ */
+/* リストページ */
+/* ------------------------------ */
+.bird {
+  list-style-image: url(../images/list-bird.png);
+}
+
+/* ------------------------------ */
+/* 挑戦ページ */
+/* ------------------------------ */
+.history .question {
+  border-bottom: 1px black solid;
+}
